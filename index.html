@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/your-fontawesome-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="app">
+    <h1>🌦 Weather Dashboard</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="weather-card hidden" id="weatherCard">
+      <h2 id="cityName"></h2>
+      <p id="date"></p>
+      <div class="weather-info">
+        <img id="weatherIcon" alt="Weather Icon">
+        <h3 id="temperature"></h3>
+      </div>
+      <p id="description"></p>
+      <p>💧 Humidity: <span id="humidity"></span>%</p>
+      <p>🌬 Wind: <span id="wind"></span> km/h</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
